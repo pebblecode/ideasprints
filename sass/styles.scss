@@ -4,6 +4,10 @@
 $paper: hsl(40,20,98);
 $ink: hsl(40,10,30);
 
+$button: hsl(30,80,60);
+$question: hsl(30,100,60);
+$equals: hsl(80,80,60);;
+
 //===============================================================================
 // IMPORTS
 //===============================================================================
@@ -30,6 +34,9 @@ $ink: hsl(40,10,30);
 body{
   background-color: $paper;
   color: $ink;
+  font-family: sans-serif;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 1px;
 }
 
 .wrap{
@@ -46,6 +53,10 @@ header h1{
   font-size: 3em;
   letter-spacing: 2px;
   margin-bottom: 0;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 800;
+  color: hsl(10,100,55);
+  display: inline-block;
 }
 
 .track{
@@ -58,4 +69,245 @@ header h1{
 
 .track-2{
   margin-top: -60px;
+}
+
+.q-a{
+  margin-bottom: 40px;
+  font-family: sans-serif;
+
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.question,
+.answers{
+  //width: 45%;
+  float: left;
+}
+
+.question{
+  // margin-right: 10%;
+  margin-top: 1em;
+}
+
+#question,
+.equals,
+.answers button,
+.idea{
+  background-color: $question;
+  font-size: 1.6em;
+  border: 0;
+  letter-spacing: 2px;
+  padding: .2em .4em;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+
+  @include border-radius(.3em);
+}
+
+.equals{
+  background-color: $equals;
+  // line-height: 1.1;
+  // padding-bottom: .45em;
+  // position: relative;
+  // top: -.1em;
+}
+
+.answers{
+}
+
+.answers button{
+  background-color: $button;
+  margin-right: .5em;
+
+  &:hover{
+    background-color: hsl(25,100,45);
+  }
+}
+
+// <div class="container">
+//     <input type="text" id="message" />
+//     <input type="button" id="sendmessage" value="Send" />
+//     <input type="hidden" id="displayname" />
+//     <ul id="discussion">
+//     </ul>
+// </div>
+
+.container{
+  width: 100%;
+  background-color: darken($paper, 5);
+  padding: 1em;
+  margin-bottom: 8em;
+
+  @include border-radius(.3em);
+
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+
+  li{
+    margin-bottom: .2em;
+    color: lighten($ink, 20);
+
+    strong{
+      color: $ink;
+    }
+  }
+}
+
+#sendmessage{
+  border: 0;
+  background: darken($paper, 60);
+  color: $paper;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: .2em .4em;
+  letter-spacing: 1px;
+
+  @include border-radius(.3em);
+}
+
+#message{
+  padding: .2em .4em;
+  background: $paper;
+  width: 845px;
+  margin-right: 20px;
+  letter-spacing: 1px;
+
+  border: 2px solid darken($paper, 60);
+}
+
+#currentPlayer{
+  font-size: 2em;
+  margin: 1em 0 0;
+  font-size: 2em;
+  letter-spacing: 2px;
+
+  &:before{
+    content: "now playing: "
+  }
+}
+
+#resetGame{
+  background-color: hsl(80,90,45);
+  border: 0;
+  letter-spacing: 2px;
+  padding: .2em .4em;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  margin-bottom: 1em;
+
+  @include border-radius(.3em);
+
+  :hover{
+    background-color: hsl(80,90,40);   
+  }
+}
+
+#result{
+  width: 30px;
+  height: 30px;
+  margin: .2em 0 1em; 
+  background-image: url('../img/result.png');
+}
+
+#result.correct{
+  background-position: 60px bottom;
+  &:after{
+    padding-left: 40px;
+    font-size: 1.2em;
+    content: "Correct!"
+  }
+}
+
+#result.wrong{
+  background-position: 30px bottom;
+  &:after{
+    padding-left: 40px;
+    font-size: 1.2em;
+    content: "Nope!"
+  }
+}
+
+.header-player{
+  width: 100px;
+  height: 150px;
+  position: relative;
+
+  @include transition-property(left);
+  @include transition-duration(2s);
+}
+
+.header-player-1{
+  background-image: url('../img/player-1.png');
+}
+
+.header-player-2{
+  background-image: url('../img/player-2.png');
+}
+
+header .header-player{
+  display: inline-block;
+  width: 50px;
+  height: 75px;
+  background-size: 300px 75px;
+  position: relative;
+  top: .8em;
+  margin: 0 1em;
+}
+
+header .header-player-1{
+  margin-left: 14.5em;
+}
+
+.header-jump{
+  -webkit-animation: header-jump .25s steps(3, end) infinite;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes header-jump {
+  from {background-position: 50px 0;};
+  to {background-position: 200px 0;};
+}
+
+// <div id="localVideo"></div>
+// <div id="remotesVideos"></div>
+
+#localVideo,
+#remotesVideos{
+  display: inline-block;
+  margin: 0 1em 1em 0;
+}
+
+#localVideo video,
+#remotesVideos video{
+  display: inline-block;
+  width: 14em;
+}
+
+.idea{
+  border: 0;
+  color: white;
+}
+
+.idea1{
+  background-color: hsl(330,100,50);
+
+  &:hover{
+    background-color: darken(hsl(330,100,50), 10);    
+  }
+}
+
+.idea2{
+  background-color: hsl(200,80,60);
+
+  &:hover{
+    background-color: darken(hsl(200,80,60), 10);    
+  }
 }

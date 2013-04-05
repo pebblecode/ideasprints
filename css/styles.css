@@ -5,7 +5,7 @@
 /*
  * Corrects `block` display not defined in IE 8/9.
  */
-/* line 21, sass/_normalize.scss */
+/* line 21, ../sass/_normalize.scss */
 article,
 aside,
 details,
@@ -23,7 +23,7 @@ summary {
 /*
  * Corrects `inline-block` display not defined in IE 8/9.
  */
-/* line 31, sass/_normalize.scss */
+/* line 31, ../sass/_normalize.scss */
 audio,
 canvas,
 video {
@@ -34,7 +34,7 @@ video {
  * Prevents modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 40, sass/_normalize.scss */
+/* line 40, ../sass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -43,7 +43,7 @@ audio:not([controls]) {
 /*
  * Addresses styling for `hidden` attribute not present in IE 8/9.
  */
-/* line 49, sass/_normalize.scss */
+/* line 49, ../sass/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -56,7 +56,7 @@ audio:not([controls]) {
  * 2. Prevents iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 63, sass/_normalize.scss */
+/* line 63, ../sass/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -69,7 +69,7 @@ html {
 /*
  * Removes default margin.
  */
-/* line 73, sass/_normalize.scss */
+/* line 73, ../sass/_normalize.scss */
 body {
   margin: 0;
 }
@@ -80,7 +80,7 @@ body {
 /*
  * Addresses `outline` inconsistency between Chrome and other browsers.
  */
-/* line 85, sass/_normalize.scss */
+/* line 85, ../sass/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -88,7 +88,7 @@ a:focus {
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
  */
-/* line 94, sass/_normalize.scss */
+/* line 94, ../sass/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -101,7 +101,7 @@ a:hover {
  * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
  * Safari 5, and Chrome.
  */
-/* line 107, sass/_normalize.scss */
+/* line 107, ../sass/_normalize.scss */
 h1 {
   font-size: 2em;
 }
@@ -109,7 +109,7 @@ h1 {
 /*
  * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 115, sass/_normalize.scss */
+/* line 115, ../sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -117,7 +117,7 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 124, sass/_normalize.scss */
+/* line 124, ../sass/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -126,7 +126,7 @@ strong {
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
-/* line 132, sass/_normalize.scss */
+/* line 132, ../sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -134,7 +134,7 @@ dfn {
 /*
  * Addresses styling not present in IE 8/9.
  */
-/* line 140, sass/_normalize.scss */
+/* line 140, ../sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -143,7 +143,7 @@ mark {
 /*
  * Corrects font family set oddly in Safari 5 and Chrome.
  */
-/* line 153, sass/_normalize.scss */
+/* line 153, ../sass/_normalize.scss */
 code,
 kbd,
 pre,
@@ -155,7 +155,7 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers.
  */
-/* line 162, sass/_normalize.scss */
+/* line 162, ../sass/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -165,7 +165,7 @@ pre {
 /*
  * Sets consistent quote types.
  */
-/* line 172, sass/_normalize.scss */
+/* line 172, ../sass/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -173,7 +173,7 @@ q {
 /*
  * Addresses inconsistent and variable font size in all browsers.
  */
-/* line 180, sass/_normalize.scss */
+/* line 180, ../sass/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -181,7 +181,7 @@ small {
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 189, sass/_normalize.scss */
+/* line 189, ../sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -190,12 +190,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 196, sass/_normalize.scss */
+/* line 196, ../sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 200, sass/_normalize.scss */
+/* line 200, ../sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -206,7 +206,7 @@ sub {
 /*
  * Removes border when inside `a` element in IE 8/9.
  */
-/* line 212, sass/_normalize.scss */
+/* line 212, ../sass/_normalize.scss */
 img {
   border: 0;
 }
@@ -214,7 +214,7 @@ img {
 /*
  * Corrects overflow displayed oddly in IE 9.
  */
-/* line 220, sass/_normalize.scss */
+/* line 220, ../sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -225,7 +225,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE 8/9 and Safari 5.
  */
-/* line 232, sass/_normalize.scss */
+/* line 232, ../sass/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -236,7 +236,7 @@ figure {
 /*
  * Define consistent border, margin, and padding.
  */
-/* line 244, sass/_normalize.scss */
+/* line 244, ../sass/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -247,7 +247,7 @@ fieldset {
  * 1. Corrects color not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 255, sass/_normalize.scss */
+/* line 255, ../sass/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -260,7 +260,7 @@ legend {
  * 2. Corrects font size not being inherited in all browsers.
  * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
  */
-/* line 269, sass/_normalize.scss */
+/* line 269, ../sass/_normalize.scss */
 button,
 input,
 select,
@@ -277,7 +277,7 @@ textarea {
  * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 281, sass/_normalize.scss */
+/* line 281, ../sass/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -290,7 +290,7 @@ input {
  * 3. Improves usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 296, sass/_normalize.scss */
+/* line 296, ../sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -304,7 +304,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-/* line 306, sass/_normalize.scss */
+/* line 306, ../sass/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -314,7 +314,7 @@ input[disabled] {
  * 1. Addresses box sizing set to `content-box` in IE 8/9.
  * 2. Removes excess padding in IE 8/9.
  */
-/* line 316, sass/_normalize.scss */
+/* line 316, ../sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -328,7 +328,7 @@ input[type="radio"] {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 327, sass/_normalize.scss */
+/* line 327, ../sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -342,7 +342,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 340, sass/_normalize.scss */
+/* line 340, ../sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -351,7 +351,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in Firefox 4+.
  */
-/* line 349, sass/_normalize.scss */
+/* line 349, ../sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -362,7 +362,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE 8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-/* line 359, sass/_normalize.scss */
+/* line 359, ../sass/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -376,13 +376,13 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
-/* line 372, sass/_normalize.scss */
+/* line 372, ../sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 4, sass/_players.scss */
+/* line 4, ../sass/_players.scss */
 .player {
   width: 100px;
   height: 150px;
@@ -397,17 +397,17 @@ table {
   transition-duration: 2s;
 }
 
-/* line 13, sass/_players.scss */
+/* line 13, ../sass/_players.scss */
 .player-1 {
   background-image: url("../img/player-1.png");
 }
 
-/* line 17, sass/_players.scss */
+/* line 17, ../sass/_players.scss */
 .player-2 {
   background-image: url("../img/player-2.png");
 }
 
-/* line 21, sass/_players.scss */
+/* line 21, ../sass/_players.scss */
 .rest {
   -webkit-animation: rest 1.5s infinite ease-in-out;
   background-repeat: repeat-x;
@@ -416,112 +416,111 @@ table {
 }
 
 @-webkit-keyframes rest {
-  /* line 30, sass/_players.scss */
+  /* line 30, ../sass/_players.scss */
   0% {
     background-size: 600px 150px;
   }
 
-  /* line 31, sass/_players.scss */
+  /* line 31, ../sass/_players.scss */
   50% {
     background-size: 600px 145px;
   }
 }
 
-/* line 34, sass/_players.scss */
+/* line 34, ../sass/_players.scss */
 .run {
   -webkit-animation: run 0.2s steps(3, end) infinite;
   -webkit-animation-direction: alternate;
 }
 
 @-webkit-keyframes run {
-  /* line 40, sass/_players.scss */
+  /* line 40, ../sass/_players.scss */
   from {
     background-position: 400px 0;
   }
 
-  /* line 41, sass/_players.scss */
+  /* line 41, ../sass/_players.scss */
   to {
     background-position: 700px 0;
   }
 }
 
-/* line 44, sass/_players.scss */
+/* line 44, ../sass/_players.scss */
 .jump {
   -webkit-animation: jump 0.25s steps(3, end) infinite;
   -webkit-animation-direction: alternate;
 }
 
 @-webkit-keyframes jump {
-  /* line 50, sass/_players.scss */
+  /* line 50, ../sass/_players.scss */
   from {
     background-position: 100px 0;
   }
 
-  /* line 51, sass/_players.scss */
+  /* line 51, ../sass/_players.scss */
   to {
     background-position: 400px 0;
   }
 }
 
-/* line 56, sass/_players.scss */
+/* line 56, ../sass/_players.scss */
 .position-0 {
   left: 0px;
 }
 
-/* line 60, sass/_players.scss */
+/* line 60, ../sass/_players.scss */
 .position-1 {
   left: 143px;
 }
 
-/* line 64, sass/_players.scss */
+/* line 64, ../sass/_players.scss */
 .position-2 {
   left: 286px;
 }
 
-/* line 68, sass/_players.scss */
+/* line 68, ../sass/_players.scss */
 .position-3 {
   left: 429px;
 }
 
-/* line 72, sass/_players.scss */
+/* line 72, ../sass/_players.scss */
 .position-4 {
   left: 572px;
 }
 
-/* line 76, sass/_players.scss */
+/* line 76, ../sass/_players.scss */
 .position-5 {
   left: 715px;
 }
 
-/* line 80, sass/_players.scss */
+/* line 80, ../sass/_players.scss */
 .position-6 {
   left: 858px;
 }
 
-/* line 30, sass/Site.scss */
+/* line 30, ../sass/styles.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 34, sass/Site.scss */
+/* line 34, ../sass/styles.scss */
 body {
   background-color: #fbfaf9;
   color: #544f45;
   font-family: sans-serif;
   font-family: 'Dosis', sans-serif;
   letter-spacing: 1px;
-  padding-bottom: 7em;
 }
 
-/* line 43, sass/Site.scss */
+/* line 42, ../sass/styles.scss */
 .wrap {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 52, sass/Site.scss */
+/* line 51, ../sass/styles.scss */
 header h1 {
   text-align: center;
   font-size: 3em;
@@ -533,7 +532,7 @@ header h1 {
   display: inline-block;
 }
 
-/* line 63, sass/Site.scss */
+/* line 62, ../sass/styles.scss */
 .track {
   height: 155px;
   width: 960px;
@@ -542,47 +541,45 @@ header h1 {
   background-position: 0 bottom;
 }
 
-/* line 71, sass/Site.scss */
+/* line 70, ../sass/styles.scss */
 .track-2 {
   margin-top: -60px;
 }
 
-/* line 75, sass/Site.scss */
+/* line 74, ../sass/styles.scss */
 .q-a {
   margin-bottom: 40px;
   font-family: sans-serif;
 }
-/* line 79, sass/Site.scss */
+/* line 78, ../sass/styles.scss */
 .q-a:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 87, sass/Site.scss */
+/* line 86, ../sass/styles.scss */
 .question,
 .answers {
-  width: 45%;
   float: left;
 }
 
-/* line 92, sass/Site.scss */
+/* line 91, ../sass/styles.scss */
 .question {
-  margin-right: 10%;
-  text-align: right;
+  margin-top: 1em;
 }
 
-/* line 99, sass/Site.scss */
+/* line 99, ../sass/styles.scss */
 #question,
 .equals,
-.answers button {
-  background-color: #47b4eb;
-  font-size: 2em;
+.answers button,
+.idea {
+  background-color: #ff9933;
+  font-size: 1.6em;
   border: 0;
   letter-spacing: 2px;
   padding: .2em .4em;
   font-weight: bold;
-  margin-right: .2em;
   color: white;
   display: inline-block;
   -webkit-border-radius: 0.3em;
@@ -592,55 +589,50 @@ header h1 {
   border-radius: 0.3em;
 }
 
-/* line 113, sass/Site.scss */
+/* line 112, ../sass/styles.scss */
 .equals {
   background-color: #b4eb47;
 }
 
-/* line 124, sass/Site.scss */
+/* line 123, ../sass/styles.scss */
 .answers button {
   background-color: #eb9947;
   margin-right: .5em;
 }
-/* line 128, sass/Site.scss */
+/* line 127, ../sass/styles.scss */
 .answers button:hover {
   background-color: #e66000;
 }
 
-/* line 141, sass/Site.scss */
+/* line 140, ../sass/styles.scss */
 .container {
   width: 100%;
   background-color: #f1eeea;
   padding: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 8em;
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
   -ms-border-radius: 0.3em;
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
 }
-/* line 149, sass/Site.scss */
+/* line 148, ../sass/styles.scss */
 .container ul {
   list-style: none;
   padding: 0;
 }
-/* line 154, sass/Site.scss */
+/* line 153, ../sass/styles.scss */
 .container li {
   margin-bottom: .2em;
   color: #8c8473;
 }
-/* line 158, sass/Site.scss */
+/* line 157, ../sass/styles.scss */
 .container li strong {
   color: #544f45;
 }
-/* line 162, sass/Site.scss */
-.container h2 {
-  margin-top: 0;
-}
 
-/* line 168, sass/Site.scss */
-#sendmessage,
-#sendmessageRoom {
+/* line 163, ../sass/styles.scss */
+#sendmessage {
   border: 0;
   background: #74674e;
   color: #fbfaf9;
@@ -655,9 +647,8 @@ header h1 {
   border-radius: 0.3em;
 }
 
-/* line 181, sass/Site.scss */
-#message,
-#messageRoom {
+/* line 175, ../sass/styles.scss */
+#message {
   padding: .2em .4em;
   background: #fbfaf9;
   width: 845px;
@@ -666,19 +657,19 @@ header h1 {
   border: 2px solid #74674e;
 }
 
-/* line 191, sass/Site.scss */
+/* line 185, ../sass/styles.scss */
 #currentPlayer {
   font-size: 2em;
   margin: 1em 0 0;
   font-size: 2em;
   letter-spacing: 2px;
 }
-/* line 197, sass/Site.scss */
+/* line 191, ../sass/styles.scss */
 #currentPlayer:before {
   content: "now playing: ";
 }
 
-/* line 202, sass/Site.scss */
+/* line 196, ../sass/styles.scss */
 #resetGame {
   background-color: #95da0b;
   border: 0;
@@ -694,12 +685,12 @@ header h1 {
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
 }
-/* line 214, sass/Site.scss */
+/* line 208, ../sass/styles.scss */
 #resetGame :hover {
   background-color: #85c20a;
 }
 
-/* line 219, sass/Site.scss */
+/* line 213, ../sass/styles.scss */
 #result {
   width: 30px;
   height: 30px;
@@ -707,29 +698,29 @@ header h1 {
   background-image: url("../img/result.png");
 }
 
-/* line 226, sass/Site.scss */
+/* line 220, ../sass/styles.scss */
 #result.correct {
   background-position: 60px bottom;
 }
-/* line 228, sass/Site.scss */
+/* line 222, ../sass/styles.scss */
 #result.correct:after {
   padding-left: 40px;
   font-size: 1.2em;
   content: "Correct!";
 }
 
-/* line 235, sass/Site.scss */
+/* line 229, ../sass/styles.scss */
 #result.wrong {
   background-position: 30px bottom;
 }
-/* line 237, sass/Site.scss */
+/* line 231, ../sass/styles.scss */
 #result.wrong:after {
   padding-left: 40px;
   font-size: 1.2em;
   content: "Nope!";
 }
 
-/* line 244, sass/Site.scss */
+/* line 238, ../sass/styles.scss */
 .header-player {
   width: 100px;
   height: 150px;
@@ -744,17 +735,17 @@ header h1 {
   transition-duration: 2s;
 }
 
-/* line 253, sass/Site.scss */
+/* line 247, ../sass/styles.scss */
 .header-player-1 {
   background-image: url("../img/player-1.png");
 }
 
-/* line 257, sass/Site.scss */
+/* line 251, ../sass/styles.scss */
 .header-player-2 {
   background-image: url("../img/player-2.png");
 }
 
-/* line 261, sass/Site.scss */
+/* line 255, ../sass/styles.scss */
 header .header-player {
   display: inline-block;
   width: 50px;
@@ -765,39 +756,63 @@ header .header-player {
   margin: 0 1em;
 }
 
-/* line 271, sass/Site.scss */
+/* line 265, ../sass/styles.scss */
 header .header-player-1 {
   margin-left: 14.5em;
 }
 
-/* line 275, sass/Site.scss */
+/* line 269, ../sass/styles.scss */
 .header-jump {
   -webkit-animation: header-jump 0.25s steps(3, end) infinite;
   -webkit-animation-direction: alternate;
 }
 
 @-webkit-keyframes header-jump {
-  /* line 281, sass/Site.scss */
+  /* line 275, ../sass/styles.scss */
   from {
     background-position: 50px 0;
   }
 
-  /* line 282, sass/Site.scss */
+  /* line 276, ../sass/styles.scss */
   to {
     background-position: 200px 0;
   }
 }
 
-/* line 289, sass/Site.scss */
+/* line 283, ../sass/styles.scss */
 #localVideo,
 #remotesVideos {
   display: inline-block;
   margin: 0 1em 1em 0;
 }
 
-/* line 295, sass/Site.scss */
+/* line 289, ../sass/styles.scss */
 #localVideo video,
 #remotesVideos video {
   display: inline-block;
   width: 14em;
+}
+
+/* line 294, ../sass/styles.scss */
+.idea {
+  border: 0;
+  color: white;
+}
+
+/* line 299, ../sass/styles.scss */
+.idea1 {
+  background-color: #ff0080;
+}
+/* line 302, ../sass/styles.scss */
+.idea1:hover {
+  background-color: #cc0066;
+}
+
+/* line 307, ../sass/styles.scss */
+.idea2 {
+  background-color: #47b4eb;
+}
+/* line 310, ../sass/styles.scss */
+.idea2:hover {
+  background-color: #19a1e6;
 }
