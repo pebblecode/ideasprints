@@ -1,4 +1,4 @@
-var questions = ['question 1', 'question 2', 'question 3','question 4','question 5','question 6','question 7','question 8']
+var questions = ['Will the idea save AstraZeneca money?', 'Will you be able to create a prototype within 1 week?', 'Will the prototype cost less than $20k to create?','Will the idea involve multiple deplartments?','Will the idea increase productivity?','Have you thought of any potential problems to the idea?','Have you talked to at least three other people about the idea','Will your idea affect people in multiple countries?']
 
 var yesAnswers = 0;
 var questionsAnswered = 0;
