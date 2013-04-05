@@ -1,25 +1,49 @@
-var questions = ['Will the idea save AstraZeneca money?', 'Will you be able to create a prototype within 1 week?', 'Will the prototype cost less than $20k to create?','Will the idea involve multiple departments?','Will the idea increase productivity?','Have you thought of any potential problems to the idea?','Have you talked to at least three other people about the idea','Will your idea affect people in multiple countries?']
+var questions = [
+'Which idea the idea save AstraZeneca the most money?', 
+'Which idea will be quickest to prototype?',
+ 'Will the prototype cost the least to prototype?',
+ 'Which idea will involve the most departments?',
+ 'Which idea will increase productivity the most?',
+ 'Which idea has the least potential issues?',
+ 'Which idea will affect the most people?',
+ 'Will your idea affect people in multiple countries?']
 
-var yesAnswers = 0;
 var questionsAnswered = 0;
-var movePlayer = function() {
-  var player = $('.player');
+var yesAnswersIdea1 = 0;
+var yesAnswersIdea2 = 0;
+var movePlayer1 = function(id) {
+  var player = $('.player-1');
   
   player.toggleClass("rest run")
-		.removeClass('position-' +(yesAnswers-1))
-		.addClass('position-' + yesAnswers);
+		.removeClass('position-' +(yesAnswersIdea1-1))
+		.addClass('position-' + yesAnswersIdea1);
 
 		
   window.setTimeout(function () { 
     player.toggleClass("run rest"); 
   }, 2000);
   
-  if (yesAnswers === 6) {
+  if (yesAnswersIdea1 === 6) {
     player.toggleClass('rest jump')
-  }
-		
+  }		
 };
 
+var movePlayer2 = function() {
+  var player = $('.player-2');
+  
+  player.toggleClass("rest run")
+		.removeClass('position-' +(yesAnswersIdea2-1))
+		.addClass('position-' + yesAnswersIdea2);
+
+		
+  window.setTimeout(function () { 
+    player.toggleClass("run rest"); 
+  }, 2000);
+  
+  if (yesAnswersIdea2 === 6) {
+    player.toggleClass('rest jump')
+  }		
+};
 (function(){
 
 $('#question').text(questions[0]);
@@ -27,9 +51,12 @@ $('#question').text(questions[0]);
 $('button').bind('click', function(e){
     var target = $(e.target);
 		
-	if (target.hasClass('yes')) {
-	    yesAnswers++;
-		movePlayer();
+	if (target.hasClass('idea1')) {
+		yesAnswersIdea1++;
+		movePlayer1();
+	}else{
+		yesAnswersIdea2++;
+		movePlayer2();
 	}
 	 
 	questionsAnswered++;
