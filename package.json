@@ -1,0 +1,26 @@
+{
+  "name": "thumb-thinker-web",
+  "version": "0.0.0-3",
+  "description": "web view for thumb thinker",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "node-static": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pebblecode/thumb-thinker-web.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "subdomain": "tsquires-thumb-thinker-web",
+  "engines": {
+    "node": "0.8.x"
+  }
+}
